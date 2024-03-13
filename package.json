@@ -1,0 +1,15 @@
+{
+    "name": "dag-workflow",
+    "description": "Workflow runner that can accept the specification of a workflow in the form of a DAG",
+    "version": "1.0.0",
+    "scripts": {
+        "test": "jest --runInBand",
+        "test:watch": "jest --watch",
+        "start": "tsc main.ts && node main.js"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2"
+    }
+}
