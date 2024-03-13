@@ -59,7 +59,7 @@ describe('WorkflowRunner', () => {
       ['B'],    // B is printed after 6 seconds (8 - 2)
       ['D'],    // D is printed after 17 seconds (8 + 9)
       ['E'],    // E is printed after 20 seconds (8 + 12)
-      ['E'],    // E is printed after 23 seconds (8 + 12 + 3)
+      ['E'],    // E is printed after 20 seconds (8 + 9 + 3)
     ]);
 
     // Restore the original implementation of console.log
