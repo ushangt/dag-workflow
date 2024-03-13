@@ -2,6 +2,7 @@
 Workflow runner that can accept the specification of a workflow in the form of a DAG.
 
 # Assumptions and Validations
+
 1. The workflow runner expects an object of the following type:
 ```
 {
@@ -11,7 +12,9 @@ Workflow runner that can accept the specification of a workflow in the form of a
 }
 ```
 Number of edges for each node are not a limiting factor. The runner expects a start node to be provided. If not it logs an error.
+
 2. The workflow runner expects a true DAG (ie. no cycles). If a cycle is encountered, the runner will throw an exception.
+
 3. The workflow runner expects non-negative weighted edges. If a negative edge is encountered, the runner will throw an exception.
 
 # Pre-requisites
